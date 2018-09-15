@@ -1,10 +1,9 @@
 require 'pry'
 
 def consolidate_cart(cart)
-  consol = cart.uniq
   new_cart = {}
   cart.uniq.each do |item|
-    new_cart[item.keys[0]] = item.values[0]
+    new_cart[item.keys[0]] = item.values[0].copy()
     count = 0 
     cart.each do |object|
     if item == object 
