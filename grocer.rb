@@ -14,7 +14,7 @@ def consolidate_cart(cart)
   by_item.keys.each do |item|
     this_item = by_item[item]
     n = this_item.length
-    by_item[item] = this_item[0].copy
+    by_item[item] = this_item[0].clone
     by_item[item][:count] = n
   end
   
