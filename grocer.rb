@@ -1,6 +1,24 @@
 require 'pry'
 
 def consolidate_cart(cart)
+  by_item = {}
+  cart.each do |item_info|
+    item_info.each do |item, details|
+      unless by_item.key? item
+        by_item[item] = []
+      end
+      by_item[item] << details
+    end
+  end
+  
+  by_item = {
+    "AVOCADO" => [
+      
+      ]
+  }
+  
+  
+  
   cart.each do |item_hash|
     item_hash.each do |item, details|
       count = 0 
