@@ -11,12 +11,14 @@ def consolidate_cart(cart)
     end
   end
   
-  by_item = {
-    "AVOCADO" => [
-      {:price => 3.0, :clearance => true },
-      
-      ]
-  }
+  by_item.keys.each do |item|
+    this_item = by_item[key]
+    n = this_item.length
+    by_item[key] = this_item[0].copy
+    by_item[key][:count] = n
+  end
+  
+  binding.pry
   
   
   
