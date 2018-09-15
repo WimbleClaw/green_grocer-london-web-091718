@@ -4,7 +4,7 @@ def consolidate_cart(cart)
   by_item = {}
   cart.each do |item_info|
     item_info.each do |item, details|
-      unless by_item.key? item
+      unless by_item.include? item
         by_item[item] = []
       end
       by_item[item] << details
