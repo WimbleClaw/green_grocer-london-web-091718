@@ -3,9 +3,9 @@ require 'pry'
 def consolidate_cart(cart)
   cart.each do |item_hash|
     item_hash.each do |item, details|
-      binding.pry
       count = 0 
       if item_hash.include?(item)
+        binding.pry
         count += 1
       end
       item_hash[:count] = count
