@@ -12,10 +12,10 @@ def consolidate_cart(cart)
   end
   
   by_item.keys.each do |item|
-    this_item = by_item[key]
+    this_item = by_item[item]
     n = this_item.length
-    by_item[key] = this_item[0].copy
-    by_item[key][:count] = n
+    by_item[item] = this_item[0].copy
+    by_item[item][:count] = n
   end
   
   binding.pry
