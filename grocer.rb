@@ -1,7 +1,8 @@
 require 'pry'
 
 def consolidate_cart(cart)
-  cart.each do |items|
+  cart.each do |item_hash|
+    binding
     item.each do |item, details|
     binding.pry
     end
