@@ -13,6 +13,7 @@ def consolidate_cart(cart)
   
   by_item = {
     "AVOCADO" => [
+      {:price => 3.0, :clearance => true },
       
       ]
   }
