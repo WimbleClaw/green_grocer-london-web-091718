@@ -7,7 +7,6 @@ def consolidate_cart(cart)
       if item_hash.include?(item)
         count += 1
       end
-      binding.pry
       item_hash[:count] = count
       binding.pry
     end
